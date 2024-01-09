@@ -97,7 +97,7 @@ body{
     background-color: var(--nav-bg-1);
     padding: 1.5rem 3rem;
     border-bottom: 2px solid rgb(219,219,219);
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 }
 .topNav{
