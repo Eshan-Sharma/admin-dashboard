@@ -41,6 +41,16 @@ body{
     overflow: hidden;
     height: 100vh;
 }
+.drawer:hover{
+    width: var(--drawer-width);
+}
+.menuItem > h1{
+    display: none;
+    margin: 5%;
+}
+.drawer:hover > .menuItem > h1{
+    display: inline;
+}
 .menuItem{
     color: var(--text-secondary);
     display: flex;
@@ -56,8 +66,4 @@ body{
 }
 .content{
     grid-area: content;
-}
-
-img{
-    height: 24px;
 }
