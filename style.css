@@ -97,6 +97,8 @@ body{
     background-color: var(--nav-bg-1);
     padding: 1.5rem 3rem;
     border-bottom: 2px solid rgb(219,219,219);
+    position: sticky;
+    top: 0;
 }
 .topNav{
     display: grid;
@@ -194,8 +196,6 @@ img{
     grid-template-areas: 
     "project announcements" 
     "projects trending";
-    overflow: auto;
-    height: 100%;
 }
 
 .content h3{
@@ -245,4 +245,35 @@ img{
     padding: 2rem;
     border-radius: 0.6rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0/.1), 0 4px 6px -4px rgb(0 0 0/.1);
+}
+
+.announcements{
+    grid-area: announcements;   
+}
+.announcement{
+    width: 25ch;
+    padding: 1rem 0;
+}
+.announcement:first-child{
+    padding-top: 0;
+}
+.announcement:last-child{
+    padding-bottom: 0;
+}
+.announcement h5{
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+.announcement p{
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.announcement + .announcement{
+    border-top: gray 1px solid;
+}
+.trending{
+    grid-area: trending;
 }
