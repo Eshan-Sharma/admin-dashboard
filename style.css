@@ -46,11 +46,21 @@ body{
 }
 .menuItem > h1{
     display: none;
-    margin: 5%;
+    margin-left: 5%;
 }
 .drawer:hover > .menuItem > h1{
     display: inline;
 }
+.drawer > div:not(:first-child) > *{
+    padding: 1vw 0.1vw 0.1vw 0vw;
+    font-size: calc(20px + 0.2vw);
+    padding-left: 20px;
+}
+.drawer > div:not(:first-child) > img{
+    width: calc(20px + 0.5vw);
+    height: calc(20px + 0.5vw);
+}
+
 .menuItem{
     color: var(--text-secondary);
     display: flex;
