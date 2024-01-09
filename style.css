@@ -32,7 +32,20 @@ body{
     grid-template-rows: 0.8fr 4fr;
     grid-template-columns: 5rem 1fr 1fr 1fr;
 }
-
+.drawer{
+    grid-area: drawer;
+    background-color: var(--drawer-color);
+    width: 5rem;
+    position: fixed;
+    transition: var(--transition-drawer);
+    overflow: hidden;
+}
+.navbar{
+    grid-area: nav;
+}
+.content{
+    grid-area: content;
+}
 
 img{
     height: 24px;
