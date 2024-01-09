@@ -51,6 +51,10 @@ body{
 .drawer:hover > .menuItem > h1{
     display: inline;
 }
+.drawer:hover ~ .navbar, 
+.drawer:hover ~ .content{
+    margin-left: calc(var(--drawer-width)-5rem);
+} 
 .drawer > div:not(:first-child) > *{
     padding: 1vw 0.1vw 0.1vw 0vw;
     font-size: calc(20px + 0.2vw);
@@ -71,9 +75,26 @@ body{
 .menuItem > *{
     cursor: pointer;
 }
+.drawer > div:nth-child(8){
+    padding-top: 60px;
+}
+.dashboard{
+    font-size: clamp(12px, calc(25px+0.9vw),50px);
+}
+.dashboard img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(40px+ .7vw);
+    height: calc(40px+ .7vw);
+    padding-left: 10px;
+    padding-top: 10px;
+}
 .navbar{
     grid-area: nav;
+    transition: var(--transition-notDrawer);
 }
 .content{
     grid-area: content;
+    transition: var(--transition-notDrawer);
 }
