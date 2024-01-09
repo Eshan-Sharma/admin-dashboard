@@ -39,6 +39,17 @@ body{
     position: fixed;
     transition: var(--transition-drawer);
     overflow: hidden;
+    height: 100vh;
+}
+.menuItem{
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menuItem > *{
+    cursor: pointer;
 }
 .navbar{
     grid-area: nav;
