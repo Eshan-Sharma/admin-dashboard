@@ -132,6 +132,8 @@ body{
 .gh-avatar{
     background: var(--gh-avatar1) center center/cover no-repeat;
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 .account .gh-avatar{
     margin: 0 1rem 0 2.5rem;
@@ -141,7 +143,6 @@ body{
 img{
     cursor: pointer;
 }
-
 
 .bottom{
     display: flex;
@@ -276,4 +277,52 @@ img{
 }
 .trending{
     grid-area: trending;
+}
+.trending .card{
+    padding: 1.5rem;
+}
+
+.trend{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.trend + .trend{
+    margin-top: 1.5rem;
+}
+.trend .account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+.trend .username{
+    font-weight: 500;
+    margin-bottom: 0.15rem;
+}
+.trend-1 .gh-avatar2{
+    background: var(--gh-avatar2) center center/cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.trend-2 .gh-avatar3{
+    background: var(--gh-avatar3) center center/cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.trend-3 .gh-avatar4{
+    background: var(--gh-avatar4) center center/cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.trend-4 .gh-avatar5{
+    background: var(--gh-avatar5) center center/cover no-repeat;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
